@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Gravity</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/robotofont.css" type="text/css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/animsition.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/material.teal-deep_orange.min.css">  
+    <link rel="stylesheet" href="css/swipebox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="animsition">
+      <!-- Header -->
+      <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
+          <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Gallery</span>
+            <!-- Spacer -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Right Menu -->
+          </div>
+
+          <div class="mdl-layout__header-row">
+            <span>12 photos</span>
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="waterfall mdl-navigation">
+             
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+                  <i class="material-icons">search</i>
+                </label>
+              <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" name="searchbox"
+                       id="waterfall-exp" onkeypress="handle(event)"  />
+              </div>
+              <script>
+                function handle(e){
+                    if(e.keyCode === 13){
+                        //alert("Enter was pressed was presses");
+                        var query = $("input[name=searchbox]").val();
+                        window.location.href="search.html?q="+query;
+                    }
+
+                    return false;
+                }
+            </script>
+              </div>
+
+
+
+            </nav>
+          </div>
+        </header>
+        <!-- Top-right Dropdown Menu -->
+        <!-- Sidebar -->
+   <div class="mdl-layout__drawer">
+          <!-- Top -->
+          <div class="mdl-card mdl-shadow--2dp mdl-color--primary mdl-color-text--blue-grey-50 drawer-profile">
+            <div class="mdl-card__title user">
+              <img src="img/davidprasetyo.png" alt="" />
+              <span class="user-name">davidprasetyo.com</span>
+              <span class="user-mail">davidpras1994@gmail.com</span>
+              <button id="user-menu" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">arrow_drop_down</i>
+              </button>
+            </div>
+            <!-- Top-right User -->
+          </div>
+          <!-- Dropdown Menu -->
+          <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="user-menu">
+          <a href="http://www.emailmeform.com/builder/form/aefcut4Uoy6NLmf40z" >
+            <li class="mdl-menu__item">Contacts</li>
+            </a>
+          </ul>
+          <!-- Main Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link animsition-link" href="index.html"><i class="material-icons">home</i><span>Home</span></a>
+            <a class="mdl-navigation__link animsition-link" href="https://about.me/davidprasetyo"><i class="material-icons">account_circle</i><span>Profile</span></a>
+            <div class="mdl-collapse">
+                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">image</i>
+                    <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                    <span>Gallery</span>
+                </a>
+                <div class="mdl-collapse__content-wrapper">
+                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
+                    <a class="mdl-navigation__link animsition-link" href="masonry.html">Artworks</a>
+                  </div>
+                </div>
+            </div>
+            <div class="mdl-collapse">
+                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">library_books</i>
+                    <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                    <span>Blog</span>
+                </a>
+                <div class="mdl-collapse__content-wrapper">
+                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
+                    <a class="mdl-navigation__link animsition-link" href="category.html?tag=Dunia IT">Dunia IT</a>
+                    <a class="mdl-navigation__link animsition-link" href="category.html?tag=Research">IT Development</a>
+                    <a class="mdl-navigation__link animsition-link" href="category.html?tag=Tutorial IT">Tutorial</a>
+                    <a class="mdl-navigation__link animsition-link" href="category.html?tag=Movies">Film & Review</a>
+                    <a class="mdl-navigation__link animsition-link" href="category.html?tag=Kana Hanazawa">Ngidol Hanakana</a>
+                    <a class="mdl-navigation__link animsition-link" href="category.html?tag=JKT48">Ngidol Jiketi</a>
+                    <a class="mdl-navigation__link animsition-link" href="search.html?q=download">Download</a>
+                  </div>
+                </div>
+            </div>
+            <a class="mdl-navigation__link animsition-link" href="liveupdates.html"><i class="material-icons">queue_music</i><span>Live Updates</span></a>
+            <div class="drawer-separator"></div>
+            <div class="mdl-collapse">
+                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">apps</i>
+                    <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+                    <span>App</span>
+                </a>
+                <div class="mdl-collapse__content-wrapper">
+                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
+                    <a class="mdl-navigation__link animsition-link" href="https://accounts.google.com/Login">Login</a>
+                    <a class="mdl-navigation__link animsition-link" href="http://www.emailmeform.com/builder/form/aefcut4Uoy6NLmf40z">Contacts</a>
+                  </div>
+                </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Page Content -->
+        <main class="mdl-layout__content">
+         
+            <div class="mdl-grid gallery masonry"> <!-- grid container -->
+              <div class="mdl-cell mdl-cell--6-col"> <!-- left column -->
+              <script>
+              var src="http://davithace.github.io/davidprasetyo/gallery/";
+              for(i=1; i<= 6; i++){
+               document.write('<a href="'+ src+i+'.jpg' + '" class="swipebox" title=" #' +i + '"><img src="'+ src+i+'.jpg' +'" alt="" /></a>');
+              }
+              </script>
+              </div>
+              <div class="mdl-cell mdl-cell--6-col"> <!-- right column -->
+              <script>
+              var src="http://davithace.github.io/davidprasetyo/gallery/";
+              for(i=7; i<= 12; i++){
+               document.write('<a href="'+ src+i+'.jpg' + '" class="swipebox" title=" #' +i + '"><img src="'+ src+i+'.jpg' +'" alt="" /></a>');
+              }
+              </script>
+              </div>
+            </div>
+         
+        </main>
+      </div>
+    </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/animsition.js"></script>
+    <script src="js/sweetalert.min.js"></script> 
+    <script src="js/material.min.js"></script>
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script src="js/function.js"></script>
+  </body>
+</html>
